@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Latihan Membuat Menu Vertikal Pada HTML</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+    body,* {
+   font-family: 'Roboto', sans-serif;
+   background:#1E1E1E;
+}
+nav {
+   display:none;
+   clear: both;
+   width: 100%;
+   background-color: #eee;
+}
+nav ul {
+   margin: 0;
+   padding: 0;
+}
+nav ul li {
+   list-style-type: none;
+}
+nav ul li a {
+   display: block;
+   text-decoration: none;
+   margin: 5px;
+   padding: 14px 20px;
+   color: rgb(255, 255, 255);
+   background-color: #38343D;
+   border-radius: 25px;
+}
+nav ul li a:hover {
+   color:#fff;
+   background-color: #21f33d;
+}
+
+.search {
+   display: none;
+   text-decoration: none;
+   margin: 5px;
+   padding: 14px 20px;
+   color: rgb(255, 255, 255);
+   background-color: #55443a;
+   border-radius: 5px;
+   width: 95%;
+   clear: both;
+   list-style-type: none;
+
+}
+
+#hamburger{
+   float:right;
+   padding: 7px 10px;
+   margin: 5px;
+   color: rgb(255, 255, 255);
+   background-color: #38343D;
+   border-radius: 5px;
+}
+#hamburger:hover{
+   color: #fff;
+   background-color:#21f33d;
+}
+   </style>
+</head>
+<body>
+<b id="hamburger" onclick="showMenu();">&#8801;</b>
+<nav id="menu_vertikal">
+   
+<ul>
+    <li><input class="search" type="text" placeholder="Search..."></li>
+        
+<h1></h1>
+
+<ul>
+   <li><a href="#home">Bahasa</a></li>
+   <li><a href="#portfolia">Tanggal & Waktu</a></li>
+   <li><a href="#contact">Notifikasi</a></li>
+   <li><a href="#about_me">About me</a></li>
+
+<h1></h1>
+<ul>
+    <li><a href="#pusatbantuan">Pusat Bantuan</a></li>
+    <li><a href="#tanggapan">Tanggapan</a></li>
+    <li><a href="#socialmedia ">Social Media</a></li>
+    <li><a href="#Tentang">Tentang</a></li>
+
+<h1></h1>
+<ul>
+    <li><a href="#signout">Sign Out</a></li>
+</ul>
+</nav>
+
+</body>
+</html>
+<script>
+function showMenu(){
+   var x = document.getElementById('hamburger').innerHTML;
+   console.log(x);
+   if(x=="x"){
+     console.log("close");
+     document.getElementById('hamburger').innerHTML="&#8801;";
+     document.getElementById('menu_vertikal').style.display="none";
+   }else {
+     console.log("hamburger");
+     document.getElementById('hamburger').innerHTML="x";
+     document.getElementById('menu_vertikal').style.display="block";
+   }
+}
+</script>

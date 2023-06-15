@@ -1,0 +1,33 @@
+body{
+    background-color: black;
+}
+
+.hari{
+    display: flex;
+}
+.hari > div{
+    width: 150px;
+    height: 30px;
+    margin: 5px;
+    padding-left: 10px;
+    color: rgb(232, 234, 236);
+    text-align: left;
+}
+
+.container{
+    display: flex;
+}
+
+.container > div{
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgb(59, 61, 59);
+}
+
+.kotak{
+    color: rgb(177, 177, 173);
+    padding-top: 10px;
+    padding-left: 10px;
+}
